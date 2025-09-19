@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(203, 203, 203);">
+
+    <!-- Centered header with the title "FGCU Salseros" -->
+    <center><h1>FGCU Salseros</h1></center>
+
+
+    <center><p>Login to continue to the member page!!!</p></center>
+    <!-- Centered paragraph prompting user to login -->
+
+    <center>
+        <img src="C:\Users\13nag\Downloads\Image-removebg-preview.png" alt="SalserosLogo" width="200" height="200" />
+    </center>
+    <br />
+    <!-- Centered image with the Salseros logo -->
+   
+    <center>
+        <form id="loginForm">
+            <!-- Username input field -->
+            Username:
+            <input type="text" id="text_input" value="">
+            <!-- Password input field (type is number, consider changing to text) -->
+            Password:
+            <input type="number" id="number_input" value="">
+            <!-- Button to trigger the buttonResponse function -->
+            <button type="button" onclick="buttonResponse()">Submit</button>
+        </form>
+
+        <!-- Display area for the results of the login -->
+        <p id="text_result"></p>
+        <p id="number_result"></p>
+    </center>
+    <br />
+
+    <hr>
+
+    <!-- database stuff -->
+    <center>
+        <form id="register" method="POST" action="http://localhost:3000/register">
+            Username:
+            <!-- Username input field -->
+            <input type="text" name="username" value="">
+            Password:
+            <input type="text" name="password" value="">
+            <!-- Password input field (type is text for simplicity) -->
+
+            <button type="submit">Register</button>
+        </form>
+        <!-- Button to submit the form -->
+
+        <p id="registration_result"></p>
+    </center>
+    <!-- Display area for the results of the registration -->
+
+    <script src="timeforjs.js"></script>
+</body>
+</html>
+
